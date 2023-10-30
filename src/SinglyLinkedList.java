@@ -16,12 +16,12 @@ public class SinglyLinkedList<E> {
         return size == 0;
     }
 
-    public E first() {
+    public E getFirst() {
         if (isEmpty()) return null;
         return head.getElement();
     }
 
-    public E last() {
+    public E getLast() {
         if (isEmpty()) return null;
         return tail.getElement();
     }

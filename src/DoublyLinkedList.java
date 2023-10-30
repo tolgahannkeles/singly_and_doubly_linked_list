@@ -19,12 +19,12 @@ public class DoublyLinkedList<E> {
         return size == 0;
     }
 
-    public E first() {
+    public E getFirst() {
         if (isEmpty()) return null;
         return head.getNextNode().getElement();
     }
 
-    public E last() {
+    public E getLast() {
         if (isEmpty()) return null;
         return tail.getPrevNode().getElement();
     }
@@ -106,12 +106,9 @@ public class DoublyLinkedList<E> {
     @Override
     public String toString() {
         String str = "";
-
         Node<E> current = head;
 
         while (current != null) {
-
-
             str += current.getElement() + "\n";
             current = current.getNextNode();
         }
